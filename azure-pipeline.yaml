@@ -44,4 +44,4 @@ stages:
           artifact: WebApp
         - bash: |
                   cf login -u "$(CF-USER)" -p "$(CF-PASSWORD)" -a "$(CF-API)" -o "$(CF-ORG)" -s "$(CF-SPACE)"
-                  cf deploy $(Pipeline.Workspace)/WebApp/mta_archives/city-explorer-demo-app_1.3.5.mtar -f
+                  cf deploy $(Pipeline.Workspace)/WebApp/mta_archives/city-explorer-demo-app.mtar -f
